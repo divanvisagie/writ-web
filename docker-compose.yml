@@ -1,0 +1,6 @@
+version: '2'
+services:
+    writ-web:
+        build: .
+        ports:
+            - "8000:80"
