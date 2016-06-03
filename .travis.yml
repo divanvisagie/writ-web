@@ -24,3 +24,9 @@ before_script:
 - ng build
 
 script: karma start config/karma.conf.js --single-run
+
+after_success:
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - sbt docker:stage
+  - docker build -t divanvisagie/writ-web .
+  - docker push divanvisagie/writ-web
