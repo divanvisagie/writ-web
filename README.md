@@ -3,6 +3,10 @@
 
 ## Running
 ```sh
-npm install 
+npm install
 npm start
+```
+## Docker
+```sh
+docker build -t divanvisagie/writ-web .
 ```
