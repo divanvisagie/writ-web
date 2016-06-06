@@ -7,8 +7,8 @@ import { PingService } from '../ping.service';
   selector: 'app-ping',
   templateUrl: 'ping.component.html',
   styleUrls: ['ping.component.css'],
-  viewProviders: [HTTP_PROVIDERS, XHRBackend],
-  providers: [PingService, Http, XHRBackend, BrowserXhr]
+  // viewProviders: [HTTP_PROVIDERS],
+  providers: [PingService]
 })
 export class PingComponent implements OnInit {
 
