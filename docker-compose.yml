@@ -7,7 +7,7 @@ services:
         depends_on:
             - writ-api
     writ-api:
-        image: divanvisagie/writ-api
+        image: divanvisagie/writ-api:latest
         ports:
           - "9999:9999"
           - "9990:9990"
@@ -16,7 +16,7 @@ services:
         depends_on:
           - swissguard
     swissguard:
-        image: divanvisagie/swissguard
+        image: divanvisagie/swissguard:latest
         ports:
             - "8888:9999"
             - "8880:9990"
