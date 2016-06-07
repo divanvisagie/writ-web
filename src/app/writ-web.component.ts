@@ -12,9 +12,10 @@ import { PingComponent } from './ping';
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
+    {path: '/', component: LoginComponent},
   {path: '/login', component: LoginComponent},
   {path: '/ping', component: PingComponent}
 ])
 export class WritWebAppComponent {
-  title = 'writ-web works!';
+  title = 'Writ';
 }

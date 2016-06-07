@@ -1,12 +1,17 @@
 <div class="application">
+  <nav>
+    <div class="brand">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
 
-  <a [routerLink]="['./login']">Go to login</a>
-  <br/>
-  <a [routerLink]="['./ping']">Go to ping</a>
+    <a [routerLink]="['./login']" class="hidden">Go to login</a>
+    <br/>
+    <a [routerLink]="['./ping']" class="hidden">Go to ping</a>
+  </nav>
 
-  <h1>
-  {{title}}
-  </h1>
+
 
   <router-outlet></router-outlet>
 </div>
