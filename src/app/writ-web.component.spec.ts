@@ -15,8 +15,8 @@ describe('App: WritWeb', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'writ-web works!\'',
+  it('should have as title \'Writ\'',
       inject([WritWebAppComponent], (app: WritWebAppComponent) => {
-    expect(app.title).toEqual('writ-web works!');
+    expect(app.title).toEqual('Writ');
   }));
 });
