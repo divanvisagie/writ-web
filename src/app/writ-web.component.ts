@@ -3,6 +3,7 @@ import { LoginComponent } from './login';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { PingComponent } from './ping';
 import { AdminComponent } from './admin';
+import { RegisterComponent } from './register';
 
 @Component({
   moduleId: module.id,
@@ -16,7 +17,8 @@ import { AdminComponent } from './admin';
   {path: '/', component: LoginComponent},
   {path: '/login', component: LoginComponent},
   {path: '/ping', component: PingComponent},
-  {path: '/admin', component: AdminComponent}
+  {path: '/admin', component: AdminComponent},
+  {path: '/register', component: RegisterComponent}
 ])
 export class WritWebAppComponent {
   title = 'Writ';
