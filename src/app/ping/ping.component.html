@@ -2,8 +2,13 @@
 Ping test
 </h1>
 
-<button type="button" name="button" class="btn btn-success" (click)="doPing()">Ping</button>
+<button type="button" name="button" class="btn btn-success"
+        (click)="doPing()">Ping</button>
+<button type="button" name="button" class="btn btn-success"
+        (click)="clear()">Clear</button>
 
-<h2>
-{{answer}}
-</h2>
+<h2>Responses</h2>
+
+<div class="" *ngFor="let item of responses">
+{{item}}
+</div>
