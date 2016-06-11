@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 import { LoginResponse } from '../models/login-response'
 
 
@@ -14,6 +14,10 @@ export class AuthenticationService {
         token: 'fake-token'
       })
     })
+  }
+
+  isAuthenticated() : boolean {
+    return true
   }
 
 }

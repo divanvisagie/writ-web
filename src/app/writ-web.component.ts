@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
-import { LoginComponent } from './login';
-import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
-import { PingComponent } from './ping';
-import { AdminComponent } from './admin';
-import { RegisterComponent } from './register';
+import { Component, OnInit } from '@angular/core'
+import { LoginComponent } from './login'
+import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router'
+import { PingComponent } from './ping'
+import { AdminComponent } from './admin'
+import { RegisterComponent } from './register'
+
+import { AuthenticationService } from './authentication.service'
+
 
 @Component({
   moduleId: module.id,
@@ -20,6 +23,16 @@ import { RegisterComponent } from './register';
   {path: '/admin', component: AdminComponent},
   {path: '/register', component: RegisterComponent}
 ])
-export class WritWebAppComponent {
-  title = 'Writ';
+export class WritWebAppComponent implements OnInit {
+  title = 'Writ'
+
+  constructor(
+    private authenticationService: AuthenticationService
+  ) {}
+
+  ngOnInit() {
+    if (!this.authenticationService.isAuthenticated()) {
+      // route to somewhere
+    }
+  }
 }
