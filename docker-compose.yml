@@ -1,11 +1,11 @@
 version: '2'
 services:
-    writ-web:
-        build: .
-        ports:
-            - "8000:80"
-        depends_on:
-            - writ-api
+    # writ-web:
+    #     build: .
+    #     ports:
+    #         - "8000:80"
+    #     depends_on:
+    #         - writ-api
     writ-api:
         image: divanvisagie/writ-api:latest
         ports:

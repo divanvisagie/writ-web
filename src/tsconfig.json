@@ -14,9 +14,36 @@
     "target": "es5",
     "inlineSources": true
   },
-
+  "filesGlob": [
+    "./typings/**/*.ts",
+    "./app/**/*.ts",
+    "./*.ts"
+  ],
   "files": [
-    "main.ts",
-    "typings.d.ts"
-  ]
+    "./app/admin/admin.component.spec.ts",
+    "./app/admin/admin.component.ts",
+    "./app/admin/index.ts",
+    "./app/admin/shared/index.ts",
+    "./app/environment.ts",
+    "./app/index.ts",
+    "./app/login/index.ts",
+    "./app/login/login.component.spec.ts",
+    "./app/login/login.component.ts",
+    "./app/login/shared/index.ts",
+    "./app/ping.service.spec.ts",
+    "./app/ping.service.ts",
+    "./app/ping/index.ts",
+    "./app/ping/ping.component.spec.ts",
+    "./app/ping/ping.component.ts",
+    "./app/ping/shared/index.ts",
+    "./app/shared/index.ts",
+    "./app/writ-web.component.spec.ts",
+    "./app/writ-web.component.ts",
+    "./main.ts",
+    "./system-config.ts",
+    "./typings.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }
